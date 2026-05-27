@@ -31,7 +31,7 @@ jobs:
         API_USERNAME: ${{ secrets.API_USERNAME }}
         API_PASSWORD: ${{ secrets.API_PASSWORD }}
       with:
-        path: ./Restful.Booker.Api.PerformanceTests/tests/ping-performance-tests.js
+        path: ./performance/tests/ping-performance-tests.js
 
     - name: Run auth performance tests
       uses: grafana/run-k6-action@v1
@@ -40,7 +40,7 @@ jobs:
         API_USERNAME: ${{ secrets.API_USERNAME }}
         API_PASSWORD: ${{ secrets.API_PASSWORD }}
       with:
-        path: ./Restful.Booker.Api.PerformanceTests/tests/auth-performance-tests.js
+        path: ./performance/tests/auth-performance-tests.js
 
     - name: Run booking performance tests
       uses: grafana/run-k6-action@v1
@@ -49,4 +49,4 @@ jobs:
         API_USERNAME: ${{ secrets.API_USERNAME }}
         API_PASSWORD: ${{ secrets.API_PASSWORD }}
       with:
-        path: ./Restful.Booker.Api.PerformanceTests/tests/booking-performance-tests.js
+        path: ./performance/tests/booking-performance-tests.js
