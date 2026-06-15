@@ -8,7 +8,7 @@ JavaScript-based test suites for the [Restful Booker API](https://restful-booker
 |---|---|---|
 | `performance/` | Performance & load testing | [k6](https://k6.io) |
 
-Each folder contains its own `README.md` with setup instructions, how to run the tests, and any relevant configuration details.
+The `performance/` folder contains its own `README.md` with setup instructions, how to run the tests, and configuration details.
 
 ## API Under Test
 
